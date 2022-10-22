@@ -1,0 +1,63 @@
+.nav {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  background-color: var(--main-color);
+  position: fixed;
+  top: 0;
+  justify-content: flex-end;
+
+  & > svg {
+    width: 1.25rem;
+  }
+
+  & svg:not(.dots) {
+    cursor: pointer;
+  }
+
+  aside {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background-color: var(--main-color);
+  }
+
+  & ul {
+    margin: 20vh auto 0;
+    width: fit-content;
+  }
+
+  & li {
+    text-align: center;
+  }
+
+  & li a {
+    color: var(--light-green);
+    font-weight: 600;
+    font-size: 2.75rem;
+    letter-spacing: -1.8px;
+    line-height: 1.5;
+  }
+}
+
+.close {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--faded-green);
+  justify-content: center;
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+  svg {
+    width: 0.75rem;
+  }
+}
+
+.dots {
+  width: 2rem;
+  fill: var(--yellow);
+  float: right;
+  margin: 4rem 10vw;
+}
