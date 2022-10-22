@@ -3,13 +3,14 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Logo from "../assets/icons/logo.svg";
+import Feature from "../components/Feature";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>sera.works</title>
         <meta name="description" content="A creative software developer" />
@@ -22,10 +23,18 @@ const Home: NextPage = () => {
         <Navbar />
         <Hero />
         <Link href="/">
-          <a className={styles.logo}><Logo /></a>
+          <a className={styles.logo}>
+            <Logo />
+          </a>
         </Link>
       </header>
-    </div>
+      {/**
+       * Main Content
+       */}
+      <main>
+        <Feature />
+      </main>
+    </>
   );
 };
 
