@@ -1,0 +1,40 @@
+.container {
+  margin-top: 5rem;
+  & h5,
+  p {
+    text-transform: uppercase;
+  }
+
+  & h5 {
+    color: var(--smoke);
+    letter-spacing: 2.5px;
+    line-height: 1rem;
+    font-size: 11px;
+  }
+
+  & p {
+    font-weight: 600;
+    font-size: 8px;
+    letter-spacing: 1.85px;
+    line-height: 13px;
+    margin-top: 1rem;
+  }
+}
+
+.images{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+    padding-bottom: 0.75rem;
+}
+
+.texture {
+    width: 5rem;
+    fill: var(--dark-pink);
+}
+
+.bike {
+    width: 10rem;
+}

@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Logo from "../assets/icons/logo.svg";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Feature from "../components/Feature";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
         <Feature />
         <About />
         <SelectedWorks />
+        <Contact />
       </main>
     </>
   );
