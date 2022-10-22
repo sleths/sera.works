@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Logo from "../assets/icons/logo.svg";
+import About from "../components/About";
 import Feature from "../components/Feature";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
        */}
       <main>
         <Feature />
+        <About />
       </main>
     </>
   );
