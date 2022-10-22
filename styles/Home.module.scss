@@ -1,7 +1,13 @@
 .logo {
-    width: 7.5rem;
+    width: 8.5rem;
     position: fixed;
     top: 4.5rem;
     left: 2.1rem;
     z-index: 1;
+    mix-blend-mode: difference;
+    background-color: black;
+
+    & svg path {
+        fill: white;
+    }
 }

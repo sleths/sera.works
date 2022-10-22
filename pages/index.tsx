@@ -6,6 +6,7 @@ import Logo from "../assets/icons/logo.svg";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Feature from "../components/Feature";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import SelectedWorks from "../components/SelectedWorks";
@@ -25,11 +26,12 @@ const Home: NextPage = () => {
       <header>
         <Navbar />
         <Hero />
-        <Link href="/">
+       <Link href="/">
           <a className={styles.logo}>
             <Logo />
           </a>
         </Link>
+        
       </header>
       {/**
        * Main Content
@@ -40,6 +42,8 @@ const Home: NextPage = () => {
         <SelectedWorks />
         <Contact />
       </main>
+
+      <Footer />
     </>
   );
 };

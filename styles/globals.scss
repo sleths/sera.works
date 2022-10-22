@@ -11,9 +11,10 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+  background-color: white;
 }
 
-main {
+main, footer {
   padding: 0 2.5rem;
 }
 
@@ -24,6 +25,27 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+  background-color: var(--faded-green);
+  border-radius: 28px;
+  padding: 1rem;
+  outline: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    letter-spacing: -0.35px;
+    opacity: 0.75;
+  }
 }
 
 .center {
