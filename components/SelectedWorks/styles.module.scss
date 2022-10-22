@@ -1,0 +1,27 @@
+.container {
+  margin-top: 7rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+
+  & h4 {
+    font-size: 1.4rem;
+    line-height: 26px;
+    letter-spacing: -0.95px;
+  }
+
+  & p {
+    background-color: var(--light-green);
+    color: var(--navy);
+    width: calc(100% + 5rem);
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  svg {
+    width: 100%;
+  }
+}

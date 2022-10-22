@@ -7,6 +7,7 @@ import About from "../components/About";
 import Feature from "../components/Feature";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import SelectedWorks from "../components/SelectedWorks";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
       <main>
         <Feature />
         <About />
+        <SelectedWorks />
       </main>
     </>
   );
