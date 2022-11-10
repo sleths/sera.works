@@ -63,6 +63,12 @@
   margin: 4rem 10vw;
 }
 
+@media screen and (min-width: 768px) {
+  .btn {
+    margin-top: 2.5rem;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .nav {
     width: 60px;
