@@ -1,7 +1,8 @@
 .hero {
   height: calc(100vh - 5rem);
-  margin-top: 5rem;
+  margin: 5rem auto 0 auto;
   width: 100%;
+  max-width: 1090px;
   padding: 1.75rem 2.5rem;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +24,7 @@
 .heroImg {
   width: 90%;
   margin: -10rem auto 0;
+  max-width: 400px;
 }
 
 .wave {
@@ -36,6 +38,7 @@
 
 .textContainer {
   margin-top: 2rem;
+  max-width: 375px;
 
   & h1 {
     letter-spacing: -0.8px;
@@ -54,4 +57,52 @@
 
 .btn {
   margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .textContainer,
+  .images {
+    width: 50%;
+  }
+  .textContainer {
+    order: 1;
+
+    & h1 {
+      font-size: 3rem;
+      line-height: 1;
+    }
+    & p {
+      font-size: 1rem;
+    }
+    & a {
+      margin-right: unset;
+      margin-left: unset;
+    }
+  }
+  .images {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .heroImg {
+    margin: 0;
+  }
+  .bg {
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    right: -2rem;
+  }
+  .wave {
+    bottom: -3rem;
+  }
+  .images {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

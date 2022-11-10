@@ -65,3 +65,12 @@ input {
   border-radius: 1rem;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 768px) {
+  .link-general {
+    font-size: 1rem;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 2rem;
+  }
+}

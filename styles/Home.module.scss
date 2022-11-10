@@ -1,13 +1,19 @@
 .logo {
-    width: 8.5rem;
-    position: fixed;
-    top: 4.5rem;
-    left: 2.1rem;
-    z-index: 1;
-    mix-blend-mode: difference;
-    background-color: black;
+  width: 8.5rem;
+  position: fixed;
+  top: 4.5rem;
+  left: 2.1rem;
+  z-index: 1;
+  mix-blend-mode: difference;
+  background-color: black;
 
-    & svg path {
-        fill: white;
-    }
+  & svg path {
+    fill: white;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logo {
+    left: 5rem;
+  }
 }

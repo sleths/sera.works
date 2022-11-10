@@ -62,3 +62,17 @@
   float: right;
   margin: 4rem 10vw;
 }
+
+@media screen and (min-width: 1440px) {
+  .nav {
+    width: 60px;
+    height: 100%;
+    right: 0;
+    align-items: flex-start;
+    justify-content: center;
+
+    & .openIcon {
+      margin-top: 5rem;
+    }
+  }
+}

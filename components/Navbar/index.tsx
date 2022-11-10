@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className={`center ${styles.nav}`}>
       {/* Open Icon */}
-      <LinesDuoTone onClick={openNav} />
+      <LinesDuoTone onClick={openNav} className={styles.openIcon} />
 
       {visible && (
         <aside>
