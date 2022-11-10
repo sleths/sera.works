@@ -10,11 +10,7 @@ const About = () => {
       <article>
         <h3>This is Sera.</h3>
         <p>
-          Graduated from Bilkent University in 2020 with high honors. I decided
-          to leave academia and found myself in the world of startups. Since
-          then, I’ve been improving myself as a frontend developer all the while
-          solving problems in an agile environment. At my leisure, you can find
-          me cycling in my hometown İzmir, or daydreaming about Web 3.0.
+        I am a software engineer, Bilkent alumni, and amateur cyclist based in İzmir, Turkey. React, TypeScript, JavaScript and Next.js are my go-to technologies. Currently, I’m learning Three.js and React Three Fiber and working as a front-end developer at GoWit.
         </p>
       </article>
       <section className={`center ${styles.images}`}>
