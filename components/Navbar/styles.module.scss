@@ -75,4 +75,21 @@
       margin-top: 5rem;
     }
   }
+
+  .nav aside {
+    width: 35%;
+    inset: unset;
+    right: 0;
+  }
+
+  .close {
+    right: 3rem;
+    top: 5rem;
+  }
+  .dots {
+    position: absolute;
+    bottom: 5rem;
+    right: 3rem;
+    margin: unset;
+  }
 }
