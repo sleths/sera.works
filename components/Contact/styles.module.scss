@@ -1,5 +1,8 @@
 .container {
   margin-top: 5rem;
+  min-height: 350px;
+  margin-bottom: 350px;
+
   & h5,
   p {
     text-transform: uppercase;

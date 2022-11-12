@@ -21,7 +21,7 @@ const Footer = () => {
     { icon: <Telegram />, link: "#" },
   ];
   return (
-    <footer className={styles.footer}>
+    <footer className={`center ${styles.footer}`}>
       <section>
         <Link href="/">
           <Logo className={styles.logo} />
@@ -37,7 +37,7 @@ const Footer = () => {
           ))}
         </ul>
 
-        <form className={`${styles.form}`}>
+        {/* <form className={`${styles.form}`}>
           <div className={`${styles.inputContainer}`}>
             <Hire />
             <input
@@ -47,12 +47,11 @@ const Footer = () => {
             />
           </div>
           <button className={styles.btn}>Let's Talk</button>
-        </form>
+        </form> */}
 
         <div className={styles.toTop}>
           <div className={styles.up}>
-            <Up />
-            <a href="#hero">Back to top</a>
+            <a href="#hero" className="center"><Up /> Back to top</a>
           </div>
           <Brush className={styles.brush} />
         </div>

@@ -23,25 +23,28 @@ const Home: NextPage = () => {
       {/**
        * Header
        */}
-      <header>
-        <Navbar />
-        <Hero />
-       <Link href="/">
+
+      {/**
+       * Main Content
+       */}
+      <div className="wrapper">
+        <Link href="/">
           <a className={styles.logo}>
             <Logo />
           </a>
         </Link>
-        
-      </header>
-      {/**
-       * Main Content
-       */}
-      <main>
-        <Feature />
-        <About />
-        <SelectedWorks />
-        <Contact />
-      </main>
+        <header>
+          <Navbar />
+          <Hero />
+        </header>
+        <main>
+          <Feature />
+          <About />
+          <Contact />
+        </main>
+
+        {/*  <SelectedWorks /> */}
+      </div>
 
       <Footer />
     </>

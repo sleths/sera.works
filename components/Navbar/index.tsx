@@ -24,20 +24,20 @@ const Navbar = () => {
             <CloseDuoTone />
           </div>
           <ul>
-            <li>
+            <li onClick={closeNav}>
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li onClick={closeNav}>
               <Link href="#about">About</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="#work">Work</Link>
-            </li>
-            <li>
+            </li> */}
+            <li onClick={closeNav}>
               <Link href="#contact">Contact</Link>
             </li>
           </ul>
-          <Dots className={styles.dots} />
+          {/*  <Dots className={styles.dots} /> */}
         </aside>
       )}
     </nav>

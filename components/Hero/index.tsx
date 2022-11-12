@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 
 const Hero = () => {
   return (
-    <section className={`center ${styles.hero}`}>
+    <section className={`center ${styles.hero}`} id="hero">
       <section className={styles.images}>
        {/*  <div className={styles.bg}></div> */}
         <HeroImg className={styles.heroImg} />
@@ -18,7 +18,7 @@ const Hero = () => {
           human-centered approach to problem solving. I believe in assembling
           meaningful connections between companies and customers.
         </p>
-        <Link href="#">
+        <Link href="#explore">
           <a className={`link-general ${styles.btn}`}>Explore</a>
         </Link>
       </article>

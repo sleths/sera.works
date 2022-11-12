@@ -9,19 +9,35 @@
   box-sizing: border-box;
 }
 
+html, body {
+  scroll-behavior: smooth !important;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   background-color: white;
+  position: relative;
 }
 
-main,
+header {
+  background-color: var(--white);
+}
+
+.wrapper,
 footer {
   padding: 0 2.5rem;
 }
 
-main {
-  max-width: 1000px;
-  margin: 0 auto;
+
+.wrapper {
+  position: relative;
+  z-index: 10;
+  background-color: var(--white);
+  & section {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 ul,
@@ -62,14 +78,19 @@ input {
 .link-general {
   background-color: var(--btn-green);
   color: var(--light-green);
-  font-size: 12px;
-  width: 6rem;
-  height: 2rem;
+  font-size: 13px;
+  width: 6.5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 1rem;
+  border-radius: 2rem;
   margin: 0 auto;
+  transition: opacity 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 @media screen and (min-width: 768px) {

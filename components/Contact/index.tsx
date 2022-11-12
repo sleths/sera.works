@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 const Contact = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="contact">
       <article>
         <h5>“No wise fish would go anywhere without a porpoise.”</h5>
         <p>― Lewis Carroll, Alice in Wonderland</p>

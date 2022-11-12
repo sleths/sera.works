@@ -1,11 +1,15 @@
 .logo {
-  width: 8.5rem;
-  position: fixed;
-  top: 4.5rem;
-  left: 2.1rem;
-  z-index: 1;
+  width: 7rem;
+  position: sticky;
+  top: 6.5rem;
+  margin-left: -6px;
+  z-index: 11;
   mix-blend-mode: difference;
   background-color: black;
+
+  & svg {
+    width: 7rem;
+  }
 
   & svg path {
     fill: white;
