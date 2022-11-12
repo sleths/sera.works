@@ -137,10 +137,18 @@
   .iconContainer {
     margin: 0 auto;
     gap: 3rem;
+    /* transition: opacity 0.3s ease-in;
+    & :hover {
+      opacity: 0.75;
+    } */
 
     & svg {
       width: 32px;
       height: 32px;
+      transition: opacity 0.1s ease-in;
+      & :active {
+        opacity: 0.5;
+      }
     }
   }
 

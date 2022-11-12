@@ -14,11 +14,10 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   const icons = [
-    { icon: <Mail />, link: "#" },
-    { icon: <LinkedIn />, link: "#" },
-    { icon: <Github />, link: "#" },
-    { icon: <Twitter />, link: "#" },
-    { icon: <Telegram />, link: "#" },
+    { icon: <LinkedIn />, link: "https://www.linkedin.com/in/sera-zenginler/" },
+    { icon: <Github />, link: "https://github.com/sleths" },
+    { icon: <Twitter />, link: "https://twitter.com/seradevs" },
+    { icon: <Telegram />, link: "https://telegram.me/sleths" },
   ];
   return (
     <footer className={`center ${styles.footer}`}>
@@ -28,9 +27,14 @@ const Footer = () => {
         </Link>
         <p>Come say hi</p>
         <ul className={`center ${styles.iconContainer}`}>
+          <li>
+            <a href="mailto:serazenginler@outlook.com" className="center">
+              <Mail />
+            </a>
+          </li>
           {icons.map((icon, index) => (
             <li key={index}>
-              <a href={icon.link} className="center">
+              <a href={icon.link} className="center" target="_blank">
                 {icon.icon}
               </a>
             </li>
@@ -51,7 +55,9 @@ const Footer = () => {
 
         <div className={styles.toTop}>
           <div className={styles.up}>
-            <a href="#hero" className="center"><Up /> Back to top</a>
+            <a href="#hero" className="center">
+              <Up /> Back to top
+            </a>
           </div>
           <Brush className={styles.brush} />
         </div>
