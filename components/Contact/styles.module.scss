@@ -43,13 +43,13 @@
   .container {
     min-height: 40vh;
     margin-top: 0;
-    padding-top: 4rem;
     display: flex;
     justify-content: space-between;
 
     & article {
       order: 1;
       max-width: 300px;
+      padding-top: 6rem;
     }
 
     & div {
