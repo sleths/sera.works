@@ -14,8 +14,14 @@ body {
   background-color: white;
 }
 
-main, footer {
+main,
+footer {
   padding: 0 2.5rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 ul,
@@ -72,5 +78,11 @@ input {
     width: 9rem;
     height: 3rem;
     border-radius: 2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    padding: 0;
   }
 }

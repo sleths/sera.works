@@ -2,7 +2,7 @@
   height: calc(100vh - 5rem);
   margin: 5rem auto 0 auto;
   width: 100%;
-  max-width: 1090px;
+  max-width: 1000px;
   padding: 1.75rem 2.5rem;
   flex-direction: column;
   justify-content: center;
@@ -64,6 +64,9 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .heroImg {
+    margin: 0;
+  }
   .textContainer,
   .images {
     width: 50%;
@@ -89,6 +92,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero {
+    padding: 0;
+  }
   .heroImg {
     margin: 0;
   }

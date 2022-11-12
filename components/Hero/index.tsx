@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className={`center ${styles.hero}`}>
       <section className={styles.images}>
-        <div className={styles.bg}></div>
+       {/*  <div className={styles.bg}></div> */}
         <HeroImg className={styles.heroImg} />
         <Wave className={styles.wave} />
       </section>
