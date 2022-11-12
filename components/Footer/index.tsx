@@ -24,9 +24,9 @@ const Footer = () => {
     <footer className={styles.footer}>
       <section>
         <Link href="/">
-          <Logo />
+          <Logo className={styles.logo} />
         </Link>
-        <p>Come say hi...</p>
+        <p>Come say hi</p>
         <ul className={`center ${styles.iconContainer}`}>
           {icons.map((icon, index) => (
             <li key={index}>

@@ -19,6 +19,10 @@
   }
 }
 
+.logo {
+  width: 95px;
+}
+
 .iconContainer {
   justify-content: space-between;
   max-width: 520px;
@@ -114,25 +118,33 @@
     justify-content: space-between;
 
     & > p:not(.copy) {
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 500;
       letter-spacing: 4px;
     }
 
     & form {
       justify-content: center;
-      gap: 2rem;
+      gap: 1rem;
       margin: 4rem 0;
     }
   }
 
   .iconContainer {
     margin: 0 auto;
-    gap: 5rem;
+    gap: 3rem;
 
     & svg {
-      width: 48px;
-      height: 48px;
+      width: 32px;
+      height: 32px;
     }
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .btn {
+    width: 10rem;
   }
 }
