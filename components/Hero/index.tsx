@@ -12,7 +12,7 @@ const Hero = () => {
         <Wave className={styles.wave} />
       </section>
       <article className={styles.textContainer}>
-        <h1>Hello, I'm a software developer.</h1>
+        <h1>Hello, I&apos;m a software developer.</h1>
         <p>
           From building dashboards to developing websites, or apps, I take a
           human-centered approach to problem solving. I believe in assembling

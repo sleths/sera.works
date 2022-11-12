@@ -34,7 +34,7 @@ const Footer = () => {
           </li>
           {icons.map((icon, index) => (
             <li key={index}>
-              <a href={icon.link} className="center" target="_blank">
+              <a href={icon.link} className="center" target="_blank" rel="noreferrer">
                 {icon.icon}
               </a>
             </li>
