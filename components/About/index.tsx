@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className={`${styles.container}`} id="about">
       <article>
-        <h3>Hello, I&apos;m Sera. </h3>
+        <h3>This is Sera.</h3>
         <p>
           I&apos;m a software developer, Bilkent alumni, and amateur cyclist
           based in İzmir, Turkey. React, TypeScript, JavaScript and Next.js are
