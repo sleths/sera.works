@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import LinesDuoTone from "../../assets/icons/lines.svg";
 import CloseDuoTone from "../../assets/icons/close.svg";
 import Dots from "../../assets/textures/dots.svg";
@@ -8,9 +8,25 @@ import styles from "./styles.module.scss";
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
+  const ref = useRef<any>();
+
   const openNav = () => setVisible(true);
 
   const closeNav = () => setVisible(false);
+
+  useEffect(() => {
+    if (ref.current === undefined || ref.current === null) return;
+    let handler = (event: any) => {
+      if (!ref!.current.contains(event.target)) {
+        closeNav();
+      }
+    };
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
 
   return (
     <nav className={`center ${styles.nav}`}>
@@ -18,7 +34,7 @@ const Navbar = () => {
       <LinesDuoTone onClick={openNav} className={styles.openIcon} />
 
       {visible && (
-        <aside>
+        <aside ref={ref}>
           {/* Close Icon */}
           <div className={`center ${styles.close}`} onClick={closeNav}>
             <CloseDuoTone />
