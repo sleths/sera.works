@@ -9,10 +9,6 @@
   justify-content: flex-end;
   z-index: 11;
 
-  & > svg {
-    width: 1.25rem;
-  }
-
   & svg:not(.dots) {
     cursor: pointer;
   }
@@ -43,18 +39,28 @@
   }
 }
 
-.close {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background-color: var(--faded-green);
-  justify-content: center;
+.icon {
+  width: 2rem;
+  height: 2rem;
   position: absolute;
-  top: 5vh;
-  right: 10vw;
-  svg {
-    width: 0.75rem;
+  z-index: 12;
+  left: 50%;
+  top: 83px;
+  transition: transform 0.3s ease;
+  & path {
+    fill: var(--light-green);
   }
+}
+
+.openIcon {
+  transform: translateX(-50%) rotate(270deg);
+  & path {
+    fill: var(--navy);
+  }
+}
+
+.closeIcon {
+  transform: translateX(-50%) rotate(90deg);
 }
 
 .dots {
@@ -79,9 +85,23 @@
     align-items: flex-start;
     justify-content: center;
 
-    & .openIcon {
+    /* & .openIcon {
       margin-top: 5rem;
-    }
+    } */
+  }
+
+  .icon {
+    top: 100px;
+  }
+
+  .openIcon {
+    left: -65px;
+    transform: translateY(-50%) rotate(0);
+  }
+
+  .closeIcon {
+    left: -50px;
+    transform: translateY(-50%) rotate(180deg);
   }
 
   .nav aside {
@@ -90,10 +110,6 @@
     right: 0;
   }
 
-  .close {
-    right: 3rem;
-    top: 5rem;
-  }
   .dots {
     position: absolute;
     bottom: 5rem;
