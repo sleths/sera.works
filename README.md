@@ -1,5 +1,3 @@
-# This is sera.works:wave: 
-
 <p align="center">
   <img src="https://github.com/sleths/sera.works/blob/main/assets/illustrations/nav.svg" width="350">
 </p>
@@ -22,7 +20,3 @@ Ready to embark on this journey with me? Here's how to get started:
 - [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that adds optional static typing
 - [Framer Motion](https://www.framer.com/) - A production-ready motion library for React
 - [SCSS](https://sass-lang.com/) - A preprocessor for styling with CSS
-
-## Visit
-
-- [sera.works &rarr;](https://sera.works/)
